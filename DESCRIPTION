@@ -1,11 +1,14 @@
 Package: complexdemod
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Complex demodulation for epidemic time series data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Alexandra B Hogan
+Maintainer: AB Hogan <a.hogan@imperial.ac.uk>
+Description: This package is used for applying the method of complex demodulation, a mathematical time series analysis method,
+    to seasonal infectious disease data. There are three main components to complex demodulation: demodulate; filter; and extract.
+    First, apply a 'demodulator' function with a periodicity that is equivalent to the dominant period in your dataset. Then, apply a filter,
+    where the default is a centred moving average filter. Finally, extract the amplitude and phase.
+License: MIT License
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.0.9000
